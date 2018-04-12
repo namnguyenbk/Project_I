@@ -1,0 +1,158 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  h1{
+    color: pink;
+  }
+  /* Alert buttons*/
+  .alertbt{
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 25px 30px;
+  }
+  .bt1{
+    background-color: green;
+  }
+  .bt1:hover{
+    background-color: #46a049;
+  }
+  .bt2{
+    background-color: blue;
+  }
+  .bt2:hover{
+    background-color: #0b7dda;;
+  }
+  .bt3{
+    background-color: #ff9800;
+  }
+  .bt3:hover{
+    background-color: #e68a00;
+  }
+  .bt4{
+    background-color: #f44336;
+  }
+  .bt4:hover{
+    border-color: #da190b;
+  }
+  /*Pressed buttons*/
+  .btpr{
+    text-align: center;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: lightblue;
+    box-shadow: 0 9px grey;
+    font-size: 23px;
+  }
+  .btpr:hover{
+    background-color: blue;
+  }
+  .btpr:active{
+    background-color: blue;
+    box-shadow: 0 4px grey;
+    transform: translateY(5px);
+  }
+  /*Animated buttons*/
+  .bta{
+    color: lightgrey;
+    padding: 20px;
+    width: 200px;
+    margin: 5px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: green;
+  }
+  .bta span{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+  .bta span:after{
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .bta:hover span{
+    padding-right: 25px;
+  }
+  .bta:hover span:after{
+    right: 0px;
+    opacity: 1;
+  }
+  /*Social media buttons*/
+  .fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa-facebook{
+    background: blue;
+    color: white;
+  }
+  .fa-youtube{
+    background: red;
+    color: white;
+  }
+  .fa-facebook:hover{
+    opacity: 0.7;
+  }
+  .fa-youtube:hover{
+    opacity: 0.7;
+  }
+  /*Icon button*/
+  .btn{
+   background-color: black;
+   border: none;
+   color: white;
+   padding: 12px 16px;
+   font-size: 20px;
+   cursor: pointer;
+  }
+  .btn:hover{
+    background-color: grey;
+  }
+  </style>
+</head>
+<body>
+  <!--Alert buttons-->
+  <h1>Alert Button</h1>
+  <button class="alertbt bt1">OK</button>
+  <button class="alertbt bt2">Danger</button>
+  <button class="alertbt bt3">Submit</button>
+  <button class="alertbt bt4">Login</button>
+  <!--Pressed buttons-->
+  <h1>Pressed button</h1>
+  <button class="btpr">Click me</button>
+  <!--Animated buttons-->
+  <h1>Animated buuton</h1>
+  <button class="bta"> <span>Let's start</span> </button>
+  <!--Social media buttons-->
+  <h1>Social media buttons</h1>
+  <a class="fa fa-facebook" href="#"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <!--Icon buttons-->
+  <h1>Icon buttons</h1>
+  <button class="btn"> <i class="fa fa-home"> </i> Home</button>
+  <button class="btn"> <i class="fa fa-bars"> </i> Menu</button>
+  <button class="btn"> <i class="fa fa-close"></i> Exit</button>
+
+</body>
+</html>
